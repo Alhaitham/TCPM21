@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import keep_replit_alive
 
 import logging
 from colorama import Fore
