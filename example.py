@@ -115,7 +115,7 @@ twitch_miner.mine(
     followers_order=FollowersOrder.ASC  # Sort the followers list by follow date. ASC or DESC
 )
 
-port = os.getenv('PORT', 5000)
+port = os.getenv('PORT', 80)
 
 server = HTTPServer(('0.0.0.0', port), MyServer)
 server.serve_forever()
