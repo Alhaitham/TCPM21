@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import keep_replit_alive
-from http.server import HTTPServer
-import os
 
 import logging
 from colorama import Fore
@@ -115,7 +113,3 @@ twitch_miner.mine(
     followers_order=FollowersOrder.ASC  # Sort the followers list by follow date. ASC or DESC
 )
 
-port = os.getenv('PORT', 5000)
-
-server = HTTPServer(('0.0.0.0', port), MyServer)
-server.serve_forever()
